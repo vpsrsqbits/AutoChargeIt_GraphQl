@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e2feea4-803b-44c1-8deb-3d2596aff12a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/endpoints/Mutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/endpoints/Queries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/endpoints/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/payloads/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid15355.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replay_pid15355.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endpoints/Mutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endpoints/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endpoints/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/endpoints/Routes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/AddCardVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/AddVehicleVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/DeleteCardVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/DeleteVehicleVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/GraphQLQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/ResetNodeValuesVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/ScanNodeQRVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/SetDefaultCardVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/SetDefaultVehicleVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/SetQueueLengths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateChargePreferenceVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateChargeRateVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateStatusVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateUserVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateVehicleChargingVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojos/UpdateVehicleVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.~lock.AutoChargeIt-GraphQL-APIs.xlsx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/AutoChargeIt-GraphQL-APIs.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Schema_02_01_2024.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema_04_01_2024.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema_04_01_2024.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphql/.~lock.test1.xlsx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphql/GraphQLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphql/MutationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphql/QueryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphql/test1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/endpoints/Mutations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/endpoints/Queries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/endpoints/Routes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/payloads/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/Tests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,32 +68,63 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2ZTeyfDvZups4fSLnvZg2QLds6Y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.AutoChargeIt_GraphQl.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG./home/squarebits/IdeaProjects/AutoChargeIt_GraphQl/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GraphQLTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MutationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.QueryTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.QueryTest.listVehicles.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestMutations.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestQueries.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestQueries.getUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Tests.executor&quot;: &quot;Run&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/squarebits/IdeaProjects/AutoChargeIt_GraphQl/src/test/java/api/tests&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/squarebits/IdeaProjects/AutoChargeIt_GraphQl/src/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/squarebits/IdeaProjects/AutoChargeIt_GraphQl/src/test/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="endpoints" />
+    </key>
+  </component>
   <component name="RunManager" selected="Maven.AutoChargeIt_GraphQl">
     <configuration name="AutoChargeIt_GraphQl" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -73,6 +139,7 @@
             <option name="goals">
               <list />
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
@@ -92,7 +159,59 @@
       </extension>
       <method v="2" />
     </configuration>
-    <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MutationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoChargeIt_GraphQl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graphql" />
+      <option name="MAIN_CLASS_NAME" value="graphql.MutationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoChargeIt_GraphQl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graphql" />
+      <option name="MAIN_CLASS_NAME" value="graphql.QueryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.listVehicles" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoChargeIt_GraphQl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graphql" />
+      <option name="MAIN_CLASS_NAME" value="graphql.QueryTest" />
+      <option name="METHOD_NAME" value="listVehicles" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQueries" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoChargeIt_GraphQl" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +220,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api.tests" />
-      <option name="MAIN_CLASS_NAME" value="api.tests.Tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.TestQueries" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQueries.getUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoChargeIt_GraphQl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.TestQueries" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -111,13 +248,28 @@
     </configuration>
     <list>
       <item itemvalue="Maven.AutoChargeIt_GraphQl" />
-      <item itemvalue="TestNG.Tests" />
+      <item itemvalue="TestNG.MutationTest" />
+      <item itemvalue="TestNG.QueryTest.listVehicles" />
+      <item itemvalue="TestNG.QueryTest" />
+      <item itemvalue="TestNG.TestQueries.getUser" />
+      <item itemvalue="TestNG.TestQueries" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Tests" />
+        <item itemvalue="TestNG.MutationTest" />
+        <item itemvalue="TestNG.QueryTest.listVehicles" />
+        <item itemvalue="TestNG.QueryTest" />
+        <item itemvalue="TestNG.TestQueries.getUser" />
+        <item itemvalue="TestNG.TestQueries" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-7c0527ad" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -133,5 +285,13 @@
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AutoChargeIt_GraphQl$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1702455751252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>api.tests.*</FILTER>
+    </SUITE>
   </component>
 </project>

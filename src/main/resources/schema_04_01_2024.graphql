@@ -1,0 +1,264 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type CreditCard @aws_cognito_user_pools @aws_iam {
+  cardName: String
+  ccToken: String
+  expiration: String
+  isDefault: Boolean
+  lastFour: String
+  pk: String
+  sk: String
+}
+
+type Mutation @aws_cognito_user_pools @aws_iam {
+  addCard(input: CreditCardInput): CreditCard
+  addVehicle(input: AddVehicle): Vehicles
+  deleteCard(input: SKInput): CreditCard
+  deleteVehicle(input: SKInput): Vehicles
+  resetNodeValues(input: Location): Stalls
+  scanNodeQR(input: NodeQRInput): Stalls
+  setDefaultCard(input: creditCardDefaultInput): CreditCard
+  setDefaultVehicle(input: vehicleDefaultInput): Vehicles
+  setQueueLengths(input: chargerInput): chargerQueues
+  updateChargePreference(input: PreferenceChange): UserData
+  updateChargeRate(input: SiteInput): siteInfo
+  updateStatus(input: Status): Stalls
+  updateUser(input: UserInput): UserData
+  updateVehicle(input: AddVehicle): Vehicles
+  updateVehicleCharging(input: NodeQRInput): Stalls
+}
+
+type NodeQRData {
+  cardSK: String
+  cardnoxCustomerId: String
+  data: String
+  pk: String
+  preferenceID: Int
+  scanTime: String
+  sk: String
+  stallId: Int
+  vehicleSK: String
+  xRefNum: String
+}
+
+type Preferences {
+  defaultCard: CreditCard
+  defaultVehicle: Vehicles
+}
+
+type Query @aws_cognito_user_pools @aws_iam {
+  getDefaultCreditCard: creditCardPaginated
+  getDefaultVehicle: vehiclePaginated
+  getPricing(input: SKInput): siteInfo
+  getQueueLengths(input: Location): chargerQueues
+  getUser: userDataPaginated
+  listAllSites: [siteInfo]
+  listAvailableStalls: stallsPaginated
+  listChargingVehicles: stallsPaginated
+  listCreditCards: creditCardPaginated
+  listVehicles: vehiclePaginated
+}
+
+type Stalls {
+  activeCharge: Boolean
+  activeParked: Boolean
+  cardSK: String
+  cardnoxCustomerId: String
+  data: String
+  pk: String
+  preferenceId: Int
+  scanTime: String
+  sk: String
+  stallId: Int
+  status: Int
+  vehicleSK: String
+  xRefNum: String
+}
+
+type Subscription @aws_cognito_user_pools @aws_iam {
+  onCardAdded: CreditCard @aws_subscribe(mutations : ["addCard"])
+  onRateChange: siteInfo @aws_subscribe(mutations : ["updateChargeRate"])
+  onScan: Stalls @aws_subscribe(mutations : ["scanNodeQR"])
+  onStatusChange: Stalls @aws_subscribe(mutations : ["updateStatus"])
+  onVehicleAdded: Vehicles @aws_subscribe(mutations : ["addVehicle"])
+}
+
+type UserData {
+  address: String
+  building: String
+  chargePreference: Int
+  city: String
+  company: String
+  displayName: String
+  email: String
+  name: String
+  phone: String
+  pk: String!
+  sk: String!
+  state: String
+  zipcode: String
+}
+
+type Vehicles @aws_cognito_user_pools @aws_iam {
+  carYear: String
+  color: String
+  isDefault: Boolean
+  licensePlate: String
+  make: String
+  model: String
+  pk: String
+  sk: String
+  state: String
+  storedVehicleQR: String
+  vehicleImage: String
+  vehicleName: String
+}
+
+type chargerQueues {
+  normalQueue: Int
+  offpeakQueue: Int
+  # add more as needed
+  pk: String
+  priorityQueue: Int
+  sk: String
+}
+
+type chargingPreferences {
+  id: Int
+  rate: String
+  surcharge: String
+}
+
+type creditCardPaginated {
+  creditcard: [CreditCard]
+  nextToken: String
+}
+
+type preferencesPaginated {
+  nextToken: String
+  preferences: [Preferences]
+}
+
+type siteInfo {
+  address: String
+  normal: chargingPreferences
+  offPeak: chargingPreferences
+  pk: String
+  priority: chargingPreferences
+  sk: String
+}
+
+type stallsPaginated {
+  nextToken: String
+  stalls: [Stalls]
+}
+
+type userDataPaginated {
+  nextToken: String
+  userdata: [UserData]
+}
+
+type vehiclePaginated {
+  nextToken: String
+  vehicles: [Vehicles]
+}
+
+input AddVehicle {
+  carYear: String
+  color: String
+  isDefault: Boolean!
+  licensePlate: String!
+  make: String
+  model: String
+  state: String!
+  storedVehicleQR: String
+  vehicleImage: String
+  vehicleName: String!
+}
+
+input CreditCardInput {
+  cardName: String!
+  ccToken: String!
+  expiration: String!
+  isDefault: Boolean!
+  lastFour: String!
+}
+
+input Location {
+  pk: String
+  sk: String
+}
+
+input NodeQRInput {
+  cardSK: String
+  cardnoxCustomerId: String
+  pk: String!
+  preferenceId: Int
+  sk: String!
+  stallId: Int
+  vehicleSK: String
+  xRefNum: String
+}
+
+input PreferenceChange {
+  chargePreference: Int!
+}
+
+input SKInput {
+  sk: String!
+}
+
+input SiteInput {
+  address: String
+  normalRate: String!
+  normalSurcharge: String!
+  offPeakRate: String
+  offPeakSurcharge: String
+  priorityRate: String!
+  prioritySurcharge: String!
+  sk: String!
+}
+
+input Status {
+  pk: String!
+  sk: String!
+  status: Int!
+}
+
+input UserInput {
+  address: String
+  building: String
+  cell: String
+  chargePreference: Int
+  city: String
+  company: String
+  displayName: String!
+  email: String!
+  name: String!
+  phone: String
+  state: String
+  zipcode: String
+}
+
+input chargerInput {
+  normalQueue: Int
+  offpeakQueue: Int
+  pk: String!
+  priorityQueue: Int
+  sk: String!
+}
+
+input creditCardDefaultInput {
+  isDefault: Boolean!
+  lastFour: String!
+}
+
+input vehicleDefaultInput {
+  isDefault: Boolean!
+  licensePlate: String!
+  state: String!
+}
